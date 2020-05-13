@@ -17,20 +17,19 @@
         <div class="wrapper-shop">
             <div class="header wrap set-nav row">
                 <div class="header-logo col-4 px-0">
-                    <a href="index.html">
+                {{ page.header }}
+                    {# <a href="index.html">
                         <img src="./assets/img/logo.png" alt="">
-                    </a>
+                    </a> #}
 
                     <span>Dé online bierhandelaar</span>
                 </div>
                 <div class="header-icon col-4">
-                    <img src="./assets/img/beers.svg" alt="">
+                    <img src="/{{directory}}/assets/img/beers.svg" alt="">
                 </div>
                 <div class="webshop-header col-4">
-                    <input type="search" name="" id="">
-                    <div class="cart">
-                        <img src="./assets/img/cart.svg" alt="">
-                    </div>
+                    {{ page.search }}
+                    
                 </div>
             </div>
         </div>

@@ -22,4 +22,7 @@ regions:
     secondNav: 'Second Navigation'
     mainNav: ' Main Navigation'
     header: 'Header'
+    cart: 'Cart'
     footer: 'Footer'
+    search: 'Search'
+
