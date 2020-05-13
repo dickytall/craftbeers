@@ -276,6 +276,10 @@
     margin: 30px 0;
   }
   
+  .set-nav nav {
+    height: 100%;
+  }
+  
   .set-nav ul {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -317,11 +321,11 @@
     height: 70px;
   }
   
-  .wrapper-nav .navigation {
+  .wrapper-nav .main-navigation {
     height: 100%;
   }
   
-  .wrapper-nav .navigation li {
+  .wrapper-nav .main-navigation nav ul li {
     padding: 0 20px;
     font-family: "Rubik", sans-serif;
     text-transform: uppercase;

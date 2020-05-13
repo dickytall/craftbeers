@@ -8,9 +8,15 @@ libraries:
   - craftbeers/craftbeers-style
   - craftbeers/bootstrap_cdn
   - craftbeers/cdn_files
+libraries-override:
+  commerce_cart/cart_block:
+    css:
+      layout:
+        css/commerce_cart.layout.css: false
 stylesheets-remove:
   - core/themes/stable/css/views/views.module.css
   - core/themes/stable/css/system/views.module.css
+
 regions:
     content: 'Main Content'
     secondNav: 'Second Navigation'

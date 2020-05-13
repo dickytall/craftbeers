@@ -5,7 +5,6 @@ bootstrap_cdn:
   css:
     component:
      //stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css: {}
-
 craftbeers-style:  
   version: VERSION
   dependecies:
@@ -22,5 +21,6 @@ craftbeers-style:
     #  assets/js/app/carousel.js: {}
      assets/js/navigation.js: {}
      assets/js/maps.js: {}
-     
+
+
 
