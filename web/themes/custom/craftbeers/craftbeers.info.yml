@@ -1,0 +1,19 @@
+name: craftbeers
+type: theme
+description: 'Craftbeers theme for website use, made with love by Dickytall'
+engine: twig
+base theme: false
+core: 8.x
+libraries:
+  - craftbeers/craftbeers-style
+  - craftbeers/bootstrap_cdn
+  - craftbeers/cdn_files
+stylesheets-remove:
+  - core/themes/stable/css/views/views.module.css
+  - core/themes/stable/css/system/views.module.css
+regions:
+    content: 'Main Content'
+    secondNav: 'Second Navigation'
+    mainNav: ' Main Navigation'
+    header: 'Header'
+    footer: 'Footer'

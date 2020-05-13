@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="18px" height="18px" viewBox="0 0 18 18" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 64 (93537) - https://sketch.com -->
+    <title>circle-with-plus</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Desktop" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="HOMEPAGE" transform="translate(-691.000000, -1228.000000)" fill="#FFFFFF" fill-rule="nonzero">
+            <g id="Group-7-Copy" transform="translate(607.000000, 1214.000000)">
+                <g id="TOEVOEGEN" transform="translate(56.000000, 0.000000)">
+                    <g id="Group-5" transform="translate(28.000000, 12.000000)">
+                        <g id="circle-with-plus" transform="translate(0.000000, 2.000000)">
+                            <path d="M9,0.6 C4.361,0.6 0.6,4.361 0.6,9 C0.6,13.639 4.361,17.4 9,17.4 C13.639,17.4 17.4,13.639 17.4,9 C17.4,4.361 13.639,0.6 9,0.6 Z M14,10 L10,10 L10,14 L8,14 L8,10 L4,10 L4,8 L8,8 L8,4 L10,4 L10,8 L14,8 L14,10 Z" id="Shape"></path>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

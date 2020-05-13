@@ -1,0 +1,26 @@
+bootstrap_cdn:
+  js:
+    //cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js: {}
+    //stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js: {}
+  css:
+    component:
+     //stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css: {}
+
+craftbeers-style:  
+  version: VERSION
+  dependecies:
+      # - core/jquery
+      - core/drupal
+  css:
+    theme:
+     assets/css/styles.css: {}
+     assets/css/drupal-override.css: {}
+  js:
+     assets/js/jquery-3.4.1.min.js: {}
+    #  assets/js/jquery-3.4.1.slim.min.js: {}
+    #  assets/js/swiper.min.js: {}
+    #  assets/js/app/carousel.js: {}
+     assets/js/navigation.js: {}
+     assets/js/maps.js: {}
+     
+
