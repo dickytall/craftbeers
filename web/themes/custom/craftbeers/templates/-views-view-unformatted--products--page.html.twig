@@ -1,0 +1,84 @@
+{#
+/**
+ * @file
+ * Default theme implementation to display a view of unformatted rows.
+ *
+ * Available variables:
+ * - title: The title of this group of rows. May be empty.
+ * - rows: A list of the view's row items.
+ *   - attributes: The row's HTML attributes.
+ *   - content: The row's content.
+ * - view: The view object.
+ * - default_row_class: A flag indicating whether default classes should be
+ *   used on rows.
+ *
+ * @see template_preprocess_views_view_unformatted()
+ *
+ * @ingroup themeable
+ */
+#}
+{% if title %}
+<h3>{{ title }}</h3>
+{% endif %}
+
+
+<div class="header-block">
+  <img src="/{{directory}}/assets/img/white-transp.svg" alt="" class="circle-white hide-mobile">
+  <div class="row header-wrap mx-0">
+    <div class="col-xl-9 col-lg-10 col-md-11 col-sm-12 px-0">
+      <h1 class="h1-intro">Vacatures</h1>
+    </div>
+  </div>
+</div>
+<img src="/{{directory}}//assets/img/green-circle.svg" alt="" class="circle-green hide-mobile rellax" data-rellax-speed="-5">
+
+<div class="content-block">
+  <div class="row d-flex justify-content-center">
+    <div class="col-xl-9 col-lg-10 col-md-11 col-sm-12">
+      <div class="row">
+        <div class="intro-blue col-md-10 col-lg-7">
+          <p>
+            Ariel nv staat voor begeesterd schoonmaken. We zijn dan ook een schoonmaakbedrijf dat de
+            passie voor het vak voortdurend met zich meedraagt. En dat al 30 jaar lang. Eerst als CH
+            Cleaning Services, nu als Ariel nv, wat onze bezieling voor kwalitatieve schoonmaak
+            perfect
+            weerspiegelt. Wij delen deze passie met heel Vlaanderen en Brussel. Om dat vlot te laten
+            verlopen, werken we vanuit twee strategisch gelegen servicecentra. Eentje in Massenhoven
+            en
+            één in Gent.
+          </p>
+        </div>
+
+        <div class="body-content">
+          <div class="row">
+            <div class="col-md-9">
+
+              {# card  #}
+              <div class="col-md-10 px-0">
+                {% for row in rows %}
+                {%
+               set row_classes = [
+                default_row_class ? 'views-row',
+                              ]
+                       %}
+                <div{{ row.attributes.addClass(row_classes) }}>
+                  {{- row.content -}}
+              </div>
+              {% endfor %}
+            </div>
+
+          </div>
+          <div class="green-block col-md-3">
+            <div class="green-quote">
+              <img src="/{{directory}}/assets/img/open-quote.svg" alt="">
+              <p> Aartsengel van de elementen, geest van het water of de kleine zeemeermin: allen zijn
+                ze verbonden met water, schoonheid en begeestering.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--End BODY CONTENT-->
+    </div>
+  </div>
+</div>
+</div>

@@ -1,68 +1,31 @@
-<div class="wrapper-detail">
-            <div class="navigation-detail wrap set-nav">
-            {{page.secondNav}}
-                {# <ul>
-                    <li>
-                        <a href="#">Info</a>
-                    </li>
-                    <li>
-                        <a href="#">Shipping</a>
-                    </li>
-                    <li>
-                        <a href="#">Terms & Conditions</a>
-                    </li>
-                </ul> #}
-            </div>
-        </div>
-        <div class="wrapper-shop">
-            <div class="header wrap set-nav row">
-                <div class="header-logo col-4 px-0">
-                {{ page.header }}
-                    {# <a href="index.html">
-                        <img src="./assets/img/logo.png" alt="">
-                    </a> #}
+<nav class="set-nav">
+  <div class="wrapper-detail">
+    <div class="navigation-detail wrap">
+      {{page.secondNav}}
+  </div>
 
-                    <span>Dé online bierhandelaar</span>
-                </div>
-                <div class="header-icon col-4">
-                    <img src="/{{directory}}/assets/img/beers.svg" alt="">
-                </div>
-                <div class="webshop-header col-4">
-                    {{ page.search }}
-                    
-                </div>
-            </div>
-        </div>
-        <div class="wrapper-nav">
-            <div class="main-navigation wrap set-nav">
-            {{page.mainNav}}
-                {# <ul>
-                    <li>
-                        <a href="products.html">products</a>
-                    </li>
-                    <li>
-                        <a href="belgium.html">belgium</a>
-                    </li>
-                    <li>
-                        <a href="international.html ">international</a>
-                    </li>
-                    <li>
-                        <a href="about.html">about us</a>
-                    </li>
-                    <li>
-                        <a href="faq.html">faq</a>
-                    </li>
-                    <li>
-                        <a href="arrival.html">new arrivals</a>
-                    </li>
-                    <li>
-                        <a href="news.html">news</a>
-                    </li>
-                    <li>
-                        <a href="#">login</a>
-                    </li>
+  </nav>
 
-                </ul> #}
-            </div>
-        </div>
-       
+
+<div class="wrapper-shop">
+  <div class="header wrap row">
+    <div class="header-logo col-4 px-0">
+      {{ page.header }}
+      <span>Dé online bierhandelaar</span>
+    </div>
+    <div class="header-icon col-4">
+      <img src="/{{directory}}/assets/img/beers.svg" alt="">
+    </div>
+    <div class="webshop-header col-4">
+      {{ page.search }}
+    </div>
+  </div>
+</div>
+
+<nav class="set-nav">
+  <div class="wrapper-nav">
+    <div class="main-navigation wrap">
+      {{page.mainNav}}
+    </div>
+  </div>
+</nav>

@@ -154,7 +154,7 @@
     color: #FFFFFF;
     letter-spacing: 0.53px;
     height: 46px;
-    background-image: url(/assets/img/circle-with-plus.svg);
+    background-image: url(../../assets/img/circle-with-plus.svg);
     background-repeat: no-repeat;
     background-position: 18% 50%;
     padding: 0 30px 0 54px;
@@ -276,10 +276,6 @@
     margin: 30px 0;
   }
   
-  .set-nav nav {
-    height: 100%;
-  }
-  
   .set-nav ul {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -292,6 +288,7 @@
         -ms-flex-align: center;
             align-items: center;
     height: 100%;
+    margin: 0;
   }
   
   .set-nav ul li a {
@@ -325,7 +322,7 @@
     height: 100%;
   }
   
-  .wrapper-nav .main-navigation nav ul li {
+  .wrapper-nav .main-navigation li a {
     padding: 0 20px;
     font-family: "Rubik", sans-serif;
     text-transform: uppercase;
@@ -360,21 +357,34 @@
             align-items: center;
   }
   
-  .header .webshop-header input {
+  .header .webshop-header div {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  
+  .header .webshop-header div input[type=search] {
     height: 46px;
     width: 280px;
-    background-image: url(/assets/img/search.svg);
+    background-image: url(../../assets/img/search.svg);
     background-repeat: no-repeat;
     background-position: 97% 50%;
     padding-left: 12px;
   }
   
-  .header .webshop-header .cart {
+  .header .webshop-header div input[type=submit] {
+    display: none;
+  }
+  
+  .header .webshop-header div .cart {
     padding-left: 40px;
   }
   
   .hero-image {
-    background-image: url(/assets/img/hero.png);
+    background-image: url(../../assets/img/hero.png);
     height: 400px;
     background-repeat: no-repeat;
     background-size: cover;
