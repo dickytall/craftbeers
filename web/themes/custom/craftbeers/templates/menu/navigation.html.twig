@@ -1,4 +1,4 @@
-<nav class="set-nav">
+{# <nav class="set-nav">
   <div class="wrapper-detail">
     <div class="navigation-detail wrap">
       {{page.secondNav}}
@@ -28,4 +28,82 @@
       {{page.mainNav}}
     </div>
   </div>
-</nav>
+</nav> #}
+
+
+
+<nav class="set-nav">
+            <div class="wrapper-detail">
+                <div class="navigation-detail wrap ">
+                    {{page.secondNav}}
+                </div>
+            </div>
+        </nav>
+
+        <div class="wrapper-shop">
+            <div class="header wrap">
+
+                <div class="header-logo">
+                    <a href="index.html">
+                        <img src="/{{directory}}/assets/img/logo.png" alt="">
+                    </a>
+
+                    <span class="hide-web">Dé online bierhandelaar</span>
+                </div>
+
+                <div class="header-icon">
+                    <div class="hide-web opacity">
+                        <img src="/{{directory}}/assets/img/beers.svg" alt="">
+                    </div>
+
+                    <div class="cart hide-mobile">
+                        <img src="/{{directory}}/assets/img/cart.svg" alt="">
+                    </div>
+                    <div class="custom-search hide-search">
+                       {{ page.search }}
+                    </div>
+                </div>
+
+                <div class="webshop-header">
+                      
+
+                    <div class="custom-search">
+                        {{ page.search }}
+                    </div>
+{# 
+                    <div class="cart hide-web">
+                        <img src="/{{directory}}/assets/img/cart.svg" alt="">
+                    </div> #}
+
+                    <div class="hide-mobile mobile-nav_item_link hamburger" id="hamburger-1">
+                        <span class="line"></span>
+                        <span class="line"></span>
+                        <span class="line"></span>
+                    </div>
+
+                    <div class="mobile-nav hide-mobile">
+                        <div class="searchBar">
+                        {{ page.search }}
+                            <input type="search" name="" id="">
+                            <input type="submit" value="">
+                        </div>
+
+                        <div class="d-flex flex-column justify-content-center ">
+                            {{page.mainNav}}
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+
+
+        <nav class="set-nav">
+            <div class="wrapper-nav hide-web">
+                <div class="main-navigation wrap ">
+                    {{page.mainNav}}
+                </div>
+            </div>
+        </nav>

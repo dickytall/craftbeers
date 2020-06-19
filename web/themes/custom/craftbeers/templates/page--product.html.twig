@@ -2,14 +2,16 @@
 
   {% include directory ~ '/templates/menu/navigation.html.twig' %}
 
-  <div >
-  <div class="col-md-3">
-  x
-{{ page.sidebar_first }}
+  <div class="row">
+  <div class="col-md-3" style="margin-top:250px">
+hallo sidebar 
+{{ page.sidebar }}
   </div>
 <div class="col-md-9">
 {{ page.content }}  
 </div>
+
+
 
   </div>      
   {% include directory ~ '/templates/menu/footer.html.twig' %}

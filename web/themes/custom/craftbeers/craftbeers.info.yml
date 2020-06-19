@@ -21,9 +21,10 @@ regions:
     content: 'Main Content'
     secondNav: 'Second Navigation'
     mainNav: ' Main Navigation'
-    sidbar_first: 'Sidebar First'
+    sidebar: 'Sidebar First'
     header: 'Header'
     cart: 'Cart'
     footer: 'Footer'
     search: 'Search'
+    appels: 'appels'
 
