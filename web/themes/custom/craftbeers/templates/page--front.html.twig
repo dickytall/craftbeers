@@ -1,19 +1,24 @@
   <div class="container-fluid">
 
-  {% include directory ~ '/templates/menu/navigation.html.twig' %}
+    {% include directory ~ '/templates/menu/navigation.html.twig' %}
 
-   <div class="hero-image">
-            <p>
-                Pilsner Urquell Christmas edition
-                Nu verkrijgbaar bij Craftbeers. 
-            </p>
-            <div class="discover-btn">
-                <a href="">Ontdek hem nu</a>
-            </div>
-        </div>
+    <div class="hero-image">
+      <p>
+        Pilsner Urquell Christmas edition
+        Nu verkrijgbaar bij Craftbeers.
+      </p>
+      <div class="discover-btn">
+        <a href="">Ontdek hem nu</a>
+      </div>
+    </div>
 
-        <!-- -->
-{{ page.appels }}
-  {% include directory ~ '/templates/menu/footer.html.twig' %}
-
+ <div class="home-section wrap">
+  <div class="home-view">
+    {{ page.content }}
 </div>
+</div>
+    <!-- -->
+
+    {% include directory ~ '/templates/menu/footer.html.twig' %}
+
+  </div>

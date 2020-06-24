@@ -2,5 +2,70 @@
     background-image: url(../img/cart.svg);
     background-repeat: no-repeat;
 } */
+/* PRODUCT  PAGE GRID */
+
+.grid-x.grid-margin-x nav{
+   clear: both;
+}
+.grid-x.grid-margin-x .product-view{
+    float: left;
+ }
+
+ .cake{
+     height: 100%;
+ }
+
+ /* PRODUCT PAGE PAGER BUTTON */
+ .js-pager__items{
+    text-align: right;
+    list-style-type: none;
+}
 
 
+
+
+
+
+/* STYLING MENU  */
+ #block-craftbeers-main-menu--2{
+     height: 100%;
+ }
+
+ #block-topnavigation{
+     height: 100%;
+ }
+
+
+/* STYLING CART COUNTER */
+.cart-block--summary__count{
+    background: #DC7828;
+    display: inline-block;
+    width: 28px;
+    height: 28px;
+    text-align: center;
+    align-items: center;
+    border-radius: 200px;
+    color: white;
+    padding: 4px;
+}
+
+.cart-block--summary__count:hover{
+    text-decoration: none;
+    background-color: #ce7226;
+}
+
+
+.cart-block--link__expand:hover{
+    text-decoration: none;
+}
+
+
+.modal{
+    width: 300px;
+    height: 300px;
+    background-color: hotpink;
+}
+
+#block-craftbeers-content{
+    margin-top: 382px;
+}

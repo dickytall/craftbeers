@@ -1,0 +1,19 @@
+<?php
+// adds class to body , doesn't work
+function craftbeer_preprocess_html(&$variables) {
+    if ($node = \Drupal::request()->attributes->get('node')) {
+      $variables['attributes']['class'][] = 'page-node-' . $node->id();
+    }
+  }
+  
+
+  //
+
+
+  function craftbeers_preprocess_commerce_product(&$variables) {
+
+    // Get the commerce product.
+    $product = $variables['elements']['#commerce_product'];
+    // Pass the price.
+    $variables['price'] = $product->variations->entity->getPrice();
+ }

@@ -15,12 +15,6 @@ craftbeers-style:
      assets/css/styles.css: {}
      assets/css/drupal-override.css: {}
   js:
-     assets/js/jquery-3.4.1.min.js: {}
-    #  assets/js/jquery-3.4.1.slim.min.js: {}
-    #  assets/js/swiper.min.js: {}
-    #  assets/js/app/carousel.js: {}
-     assets/js/navigation.js: {}
-     assets/js/maps.js: {}
-
+     assets/js/nav.js: {}
 
 

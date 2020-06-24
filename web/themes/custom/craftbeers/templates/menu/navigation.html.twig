@@ -57,7 +57,7 @@
                     </div>
 
                     <div class="cart hide-mobile">
-                        <img src="/{{directory}}/assets/img/cart.svg" alt="">
+                        {{ page.cart }}
                     </div>
                     <div class="custom-search hide-search">
                        {{ page.search }}
@@ -70,10 +70,12 @@
                     <div class="custom-search">
                         {{ page.search }}
                     </div>
-{# 
+ 
                     <div class="cart hide-web">
-                        <img src="/{{directory}}/assets/img/cart.svg" alt="">
-                    </div> #}
+                        {# <img src="/{{directory}}/assets/img/cart.svg" alt=""> #}
+
+                        {{ page.cart }}
+                    </div> 
 
                     <div class="hide-mobile mobile-nav_item_link hamburger" id="hamburger-1">
                         <span class="line"></span>
@@ -102,7 +104,7 @@
 
         <nav class="set-nav">
             <div class="wrapper-nav hide-web">
-                <div class="main-navigation wrap ">
+                <div class="main-navigation wrap">
                     {{page.mainNav}}
                 </div>
             </div>

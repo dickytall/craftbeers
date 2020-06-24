@@ -2,7 +2,7 @@
   margin: 0;
   padding: 0;
   -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 .container-fluid {
@@ -30,21 +30,24 @@ p {
 
 .hide-animation {
   -webkit-animation: fadeout 2.5s forwards !important;
-          animation: fadeout 2.5s forwards !important;
+  animation: fadeout 2.5s forwards !important;
   -webkit-animation-duration: 2s;
-          animation-duration: 2s;
+  animation-duration: 2s;
 }
 
 @-webkit-keyframes fadeout {
   0% {
     opacity: 0;
   }
+
   75% {
     opacity: 0.5;
   }
+
   80% {
     opacity: 0.7;
   }
+
   100% {
     opacity: 1;
   }
@@ -54,12 +57,15 @@ p {
   0% {
     opacity: 0;
   }
+
   75% {
     opacity: 0.5;
   }
+
   80% {
     opacity: 0.7;
   }
+
   100% {
     opacity: 1;
   }
@@ -82,9 +88,64 @@ p {
   .hide-web {
     display: block;
   }
+
   .hide-mobile {
     display: none !important;
   }
+
+  .wrapper-nav {
+    background-color: #171717;
+    height: 70px;
+    position: fixed;
+    top: 156px;
+    width: 100%;
+    z-index: 10;
+  }
+
+  .wrapper-nav .main-navigation {
+    height: 100%;
+  }
+
+  .wrapper-nav .main-navigation li a {
+    padding: 0 20px;
+    font-family: "Rubik", sans-serif;
+    text-transform: uppercase;
+  }
+
+  /* desktop */
+  .set-nav ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    list-style: none;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    height: 100%;
+    margin: 0;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-orient: horizontal !important;
+  -webkit-box-direction: normal !important;
+      -ms-flex-direction: row !important;
+          flex-direction: row !important;
+
+  }
+
+  .set-nav ul li {
+    list-style-type: none;
+    margin: 0 20px;
+    text-decoration: none;
+  }
+
+  .set-nav ul li a {
+    color: white;
+  }
+
+
 }
 
 .sidebar .block {
@@ -110,8 +171,8 @@ li.facet-item {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 
 li.facet-item label {
@@ -121,22 +182,26 @@ li.facet-item label {
   color: #171717;
   letter-spacing: 0.62px;
 }
-
+/* mobile */
 .set-nav ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   list-style: none;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -webkit-box-align: left;
+  -ms-flex-align: left;
+  align-items: left;
   height: 100%;
   margin: 0;
   -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
 }
 
 .set-nav ul li {
@@ -168,24 +233,6 @@ li.facet-item label {
   display: flex;
 }
 
-.wrapper-nav {
-  background-color: #171717;
-  height: 70px;
-  position: fixed;
-  top: 156px;
-  width: 100%;
-  z-index: 10;
-}
-
-.wrapper-nav .main-navigation {
-  height: 100%;
-}
-
-.wrapper-nav .main-navigation li a {
-  padding: 0 20px;
-  font-family: "Rubik", sans-serif;
-  text-transform: uppercase;
-}
 
 .wrapper-shop {
   position: fixed;
@@ -198,15 +245,15 @@ li.facet-item label {
 
 .header {
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   height: 110px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
 }
 
 .header .header-logo {
@@ -224,11 +271,11 @@ li.facet-item label {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
   padding: 65px 15px;
 }
 
@@ -280,11 +327,11 @@ input[type=search] {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
+  -ms-flex-pack: space-evenly;
+  justify-content: space-evenly;
 }
 
 @media (min-width: 768px) {
@@ -292,21 +339,26 @@ input[type=search] {
     margin: 0 auto;
     max-width: 80%;
   }
+
   .wrapper-shop {
     background-color: white;
   }
+
   .wrapper-detail {
     background-color: #DC7828;
     height: 46px;
   }
+
   .wrapper-detail .navigation-detail {
     height: 100%;
   }
+
   .wrapper-detail .navigation-detail ul {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
   }
+
   .wrapper-detail .navigation-detail li {
     padding: 0 10px;
   }
@@ -316,25 +368,29 @@ input[type=search] {
   .hide-web {
     display: block;
   }
+
   .wrap {
     margin: 0 auto;
-    max-width: 1440px;
+    /* max-width: 1440px; */
   }
+
   /* HEADER LOGO */
   .header {
     -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
     width: 100%;
   }
+
   .header .header-icon {
     -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
   }
+
   .hero-image {
     background-image: url(/assets/img/hero.png);
     height: 400px;
@@ -343,6 +399,7 @@ input[type=search] {
     padding: 226px;
     margin-top: 156px;
   }
+
   .hero-image p {
     font-family: "Roboto", sans-serif;
     font-size: 32px;
@@ -350,25 +407,28 @@ input[type=search] {
     letter-spacing: 0.48px;
     line-height: 42px;
   }
+
   .webshop-header {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
     -webkit-box-pack: space-evenly;
-        -ms-flex-pack: space-evenly;
-            justify-content: space-evenly;
+    -ms-flex-pack: space-evenly;
+    justify-content: space-evenly;
   }
+
   .webshop-header div {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
   }
+
   .webshop-header .cart {
     margin: 0 15px;
   }
@@ -382,6 +442,7 @@ input[type=search] {
   .social-icons {
     padding: 20px 0;
   }
+
   .footer-black {
     width: 100%;
   }
@@ -399,10 +460,10 @@ input[type=search] {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
   -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  flex-wrap: wrap;
 }
 
 .footer-black .social-icons a img {
@@ -414,11 +475,11 @@ input[type=search] {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
   margin-top: 80px;
   -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  flex-wrap: wrap;
 }
 
 .footer-black .footer-menu li a {
@@ -432,7 +493,7 @@ input[type=search] {
 
 .footer-black .footer-nix {
   -ms-flex-item-align: end;
-      align-self: flex-end;
+  align-self: flex-end;
   text-align: right;
 }
 
@@ -453,11 +514,11 @@ input[type=search] {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
 }
 
 .footer-orange .newsletter {
@@ -599,7 +660,7 @@ input[type=search] {
   transition: transform .5s;
   transition: transform .5s, -webkit-transform .5s;
   -webkit-transform: translateX(100%);
-          transform: translateX(100%);
+  transform: translateX(100%);
   overflow: hidden;
   border-left: 1px solid #F1F1F1;
 }
@@ -632,7 +693,7 @@ input[type=search] {
 
 .mobile-nav__active {
   -webkit-transform: translateX(0);
-          transform: translateX(0);
+  transform: translateX(0);
 }
 
 @media (min-width: 768px) {
@@ -640,10 +701,12 @@ input[type=search] {
     background-color: white;
     width: 60vw;
   }
+
   .searchBar {
     margin: 80px 0 105px 35px;
     position: relative;
   }
+
   .mobile-nav ul li a {
     padding: 15px 35px;
   }
@@ -659,10 +722,10 @@ input[type=search] {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  flex-wrap: wrap;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
 }
 
 .content-wrapper {
@@ -677,6 +740,7 @@ input[type=search] {
 }
 
 @media (min-width: 992px) {
+
   .content-wrapper,
   .product-wrapper {
     margin-top: 226px;
@@ -690,8 +754,8 @@ input[type=search] {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
   margin: 80px 0;
 }
 
@@ -735,7 +799,6 @@ input[type=search] {
   color: #272727;
   letter-spacing: 0.53px;
   text-align: center;
-  margin-bottom: 30px;
 }
 
 .home-section .product-view__home .product-info {
@@ -786,7 +849,7 @@ input[type=search] {
   transition: 0.2s all linear;
   border: 2px solid #DC7828;
   -webkit-box-shadow: -8px 8px 16px 0 rgba(0, 0, 0, 0.16);
-          box-shadow: -8px 8px 16px 0 rgba(0, 0, 0, 0.16);
+  box-shadow: -8px 8px 16px 0 rgba(0, 0, 0, 0.16);
   border-radius: 10px;
   transition: 0.2s all linear;
 }
@@ -815,6 +878,7 @@ input[type=search] {
     transition: 0.2s all linear;
     margin: 15px 15px;
   }
+
   .home-section .product-view__home .product-name {
     font-family: "Rubik", sans-serif;
     font-size: 20px;
@@ -823,6 +887,7 @@ input[type=search] {
     text-align: center;
     margin-top: 30px;
   }
+
   .home-section .product-view__home .product-brand {
     font-family: Roboto;
     font-weight: 500;
@@ -830,23 +895,26 @@ input[type=search] {
     color: #272727;
     letter-spacing: 0.53px;
     text-align: center;
-    margin-bottom: 30px;
   }
+
   .home-section .product-view__home .product-info {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
   }
+
   .home-section .product-view__home .product-image {
     width: 230px;
     overflow: hidden;
     margin-right: 10px;
   }
+
   .home-section .product-view__home img {
     height: 300px;
     background-color: red;
     margin-left: -30px;
   }
+
   .home-section .product-view__home label {
     font-family: "Roboto", sans-serif;
     font-weight: 500;
@@ -855,12 +923,14 @@ input[type=search] {
     line-height: 18px;
     margin: 0;
   }
+
   .home-section .product-view__home p {
     font-family: "Roboto", sans-serif;
     font-size: 15px;
     letter-spacing: 0.62px;
     line-height: 18px;
   }
+
   .home-section .product-view__home .price {
     margin-top: 24px;
     font-family: "Rubik", sans-serif;
@@ -878,10 +948,9 @@ input[type=search] {
 
 .order {
   text-align: center;
-  margin-top: 25px;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 
 .order .price {
@@ -943,18 +1012,8 @@ input {
   outline: none;
 }
 
-.pro-view {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
-.product-section .product-view, .related-beers .product-view {
+.product-section .product-view,
+.related-beers .product-view {
   width: 100vw;
   height: 457px;
   background-color: white;
@@ -967,7 +1026,8 @@ input {
   transition: 0.2s all linear;
 }
 
-.product-section .product-view .product-name, .related-beers .product-view .product-name {
+.product-section .product-view .product-name,
+.related-beers .product-view .product-name {
   font-family: "Rubik", sans-serif;
   font-size: 20px;
   color: #171717;
@@ -976,45 +1036,39 @@ input {
   margin-top: 30px;
 }
 
-.product-section .product-view .product-brand, .related-beers .product-view .product-brand {
+.product-section .product-view .product-brand,
+.related-beers .product-view .product-brand {
   font-family: Roboto;
   font-weight: 500;
   font-size: 18px;
   color: #272727;
   letter-spacing: 0.53px;
   text-align: center;
-  margin-bottom: 30px;
 }
 
-.product-section .product-view .product-brand, .related-beers .product-view .product-brand {
-  font-family: Roboto;
-  font-weight: 500;
-  font-size: 18px;
-  color: #272727;
-  letter-spacing: 0.53px;
-  text-align: center;
-  margin-bottom: 40px;
-}
-
-.product-section .product-view .product-info, .related-beers .product-view .product-info {
+.product-section .product-view .product-info,
+.related-beers .product-view .product-info {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
-.product-section .product-view .product-image, .related-beers .product-view .product-image {
+.product-section .product-view .product-image,
+.related-beers .product-view .product-image {
   width: 138px;
   overflow: hidden;
   margin-right: 10px;
 }
 
-.product-section .product-view img, .related-beers .product-view img {
+.product-section .product-view img,
+.related-beers .product-view img {
   height: 202px;
   background-color: red;
   margin-left: -20px;
 }
 
-.product-section .product-view label, .related-beers .product-view label {
+.product-section .product-view label,
+.related-beers .product-view label {
   font-family: "Roboto", sans-serif;
   font-weight: 500;
   font-size: 15px;
@@ -1023,7 +1077,8 @@ input {
   margin: 0;
 }
 
-.product-section .product-view p, .related-beers .product-view p {
+.product-section .product-view p,
+.related-beers .product-view p {
   font-family: "Roboto", sans-serif;
   font-size: 15px;
   letter-spacing: 0.62px;
@@ -1031,7 +1086,8 @@ input {
   margin-bottom: 7px;
 }
 
-.product-section .product-view .price, .related-beers .product-view .price {
+.product-section .product-view .price,
+.related-beers .product-view .price {
   margin-top: 24px;
   font-family: "Rubik", sans-serif;
   font-size: 20px;
@@ -1039,20 +1095,21 @@ input {
   letter-spacing: 0.59px;
 }
 
-.product-section .product-view:hover, .related-beers .product-view:hover {
+.product-section .product-view:hover,
+.related-beers .product-view:hover {
   border: 2px #DC7828 solid;
   -webkit-transition: 0.2s all linear;
   transition: 0.2s all linear;
   border: 2px solid #DC7828;
   -webkit-box-shadow: -8px 8px 16px 0 rgba(0, 0, 0, 0.16);
-          box-shadow: -8px 8px 16px 0 rgba(0, 0, 0, 0.16);
+  box-shadow: -8px 8px 16px 0 rgba(0, 0, 0, 0.16);
   border-radius: 10px;
   transition: 0.2s all linear;
 }
 
-.product-section .order, .related-beers .order {
+.product-section .order,
+.related-beers .order {
   text-align: center;
-  margin: 30px 0;
 }
 
 @media (min-width: 576px) {
@@ -1079,6 +1136,7 @@ input {
     transition: 0.2s all linear;
     margin: 15px 15px;
   }
+
   .product-section .product-view .product-name {
     font-family: "Rubik", sans-serif;
     font-size: 20px;
@@ -1087,6 +1145,7 @@ input {
     text-align: center;
     margin-top: 30px;
   }
+
   .product-section .product-view .product-brand {
     font-family: Roboto;
     font-weight: 500;
@@ -1094,8 +1153,8 @@ input {
     color: #272727;
     letter-spacing: 0.53px;
     text-align: center;
-    margin-bottom: 30px;
   }
+
   .product-section .product-view .product-brand {
     font-family: Roboto;
     font-weight: 500;
@@ -1103,23 +1162,27 @@ input {
     color: #272727;
     letter-spacing: 0.53px;
     text-align: center;
-    margin-bottom: 40px;
+    margin-bottom: 20px;
   }
+
   .product-section .product-view .product-info {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
   }
+
   .product-section .product-view .product-image {
     width: 138px;
     overflow: hidden;
     margin-right: 10px;
   }
+
   .product-section .product-view img {
     height: 202px;
     background-color: red;
     margin-left: -20px;
   }
+
   .product-section .product-view label {
     font-family: "Roboto", sans-serif;
     font-weight: 500;
@@ -1128,6 +1191,7 @@ input {
     line-height: 18px;
     margin: 0;
   }
+
   .product-section .product-view p {
     font-family: "Roboto", sans-serif;
     font-size: 15px;
@@ -1135,6 +1199,7 @@ input {
     line-height: 18px;
     margin-bottom: 7px;
   }
+
   .product-section .product-view .price {
     margin-top: 24px;
     font-family: "Rubik", sans-serif;
@@ -1209,9 +1274,11 @@ input {
     display: -ms-flexbox;
     display: flex;
   }
+
   .product-information .beer-img {
     width: 50%;
   }
+
   .product-information .specifications {
     max-width: 490px;
     padding: 45px 0;
@@ -1230,14 +1297,6 @@ input {
 }
 
 .related-beers .pro-view {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   margin: 0 auto;
 }
 
@@ -1279,26 +1338,31 @@ input {
     padding: 45px 0 125px 0;
     max-width: 80%;
   }
+
   .txt-wrapper h1 {
     font-size: 33px;
     letter-spacing: 0.98px;
   }
+
   .txt-wrapper p {
     font-size: 16px;
     letter-spacing: 0.47px;
     line-height: 26px;
   }
+
   .txt-wrapper blockquote {
     font-size: 32px;
     letter-spacing: 0.48px;
     line-height: 42px;
   }
+
   .txt-wrapper strong {
     font-size: 14px;
     color: #DD7615;
     letter-spacing: 0.41px;
     line-height: 24px;
   }
+
   .txt-wrapper p em {
     font-size: 14px;
     color: black;
@@ -1312,6 +1376,7 @@ input {
   .txt-wrapper .detail-content {
     max-width: 65%;
   }
+
   .txt-wrapper h1 {
     font-size: 37px;
     color: #171717;
@@ -1357,6 +1422,7 @@ h1 {
     width: 352px;
     margin: 40px auto;
   }
+
   .news-img {
     max-height: 282px;
   }
@@ -1365,16 +1431,18 @@ h1 {
 @media (min-width: 768px) {
   .news-wrapper {
     -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
+    flex-wrap: wrap;
   }
+
   .news-card {
     margin: 30px 15px;
   }
 }
+
 /*# sourceMappingURL=style.css.map */

@@ -1,0 +1,37 @@
+{% for row in rows %}
+
+
+<a href="{{ row.content['#view'].style_plugin.render_tokens[ loop.index0 ]['{{ contextual_links }}'] }} ">
+  <div class="product-view">
+    <div class="product-name">
+      {{ row.content['#view'].style_plugin.render_tokens[ loop.index0 ]['{{ title }}'] }}
+    </div>
+    <div class="product-brand">
+      {{ row.content['#view'].style_plugin.render_tokens[ loop.index0 ]['{{ field_brewery }}'] }}
+    </div>
+    <div class="product-info">
+      <div class="product-image">
+        <img src="{{ row.content['#view'].style_plugin.render_tokens[ loop.index0 ]['{{ field_img }}'] }} " alt="">
+      </div>
+      <div class="">
+        {{ row.content['#view'].style_plugin.render_tokens[ loop.index0 ]['{{ field_country }}'] }}
+        {{ row.content['#view'].style_plugin.render_tokens[ loop.index0 ]['{{ field_alcohol }}'] }}
+        {{ row.content['#view'].style_plugin.render_tokens[ loop.index0 ]['{{ field_colour }}'] }}
+        {{ row.content['#view'].style_plugin.render_tokens[ loop.index0 ]['{{ field_style }}'] }}
+
+        <div class="price">{{ row.content['#view'].style_plugin.render_tokens[ loop.index0 ]['{{ price }}'] }} </div>
+      </div>
+    </div>
+    <div class="order">
+
+      {{ row.content['#view'].style_plugin.render_tokens[ loop.index0 ]['{{ variations }}'] }}
+      {# <input type="number" min="0" name="" id="">
+    <input type="submit" value="toevoegen" class="custom-submit"> #}
+    </div>
+  </div>
+</a>
+
+
+{% endfor %}
+
+
