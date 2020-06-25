@@ -4,12 +4,21 @@
 } */
 /* PRODUCT  PAGE GRID */
 
-.grid-x.grid-margin-x nav {
-  clear: both;
+/* .grid-x.grid-margin-x nav {
+  /* clear: both; 
+} */
+
+.grid-x.grid-margin-x{
+  /* float: left; */
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 15px;
+  justify-content: center;
+
 }
 
-.grid-x.grid-margin-x .product-view {
-  float: left;
+.grid-x.grid-margin-x nav{
+    width: 100%;
 }
 
 .cake {
@@ -94,9 +103,24 @@
     box-shadow: 0 0 25px 0 rgba(0, 0, 0, 0.20);
   }
 
-  #block-craftbeers-content {
+  /* #block-craftbeers-content {
     margin-top: 382px;
-  }
+  } */
+
+
+}
+
+@media (min-width: 1200px) {
+
+    .grid-x.grid-margin-x{
+        /* float: left; */
+        display: flex;
+        flex-wrap: wrap;
+        margin: 0 15px;
+        justify-content: normal;
+      
+      }
+
 }
 
 
@@ -135,3 +159,25 @@ table.cols-0 td {
     box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.20);
 
 }
+
+
+/* FACETS COLLAPSE REMOVE ON TABLET  */
+.facets__web{
+    display: none;
+}
+
+@media (min-width: 768px) {
+.facets__dropdown{
+    display: none;
+}
+
+.facets__web{
+    display: block;
+}
+}
+
+
+.facet-item__value, .facets-checkbox{
+    cursor: pointer;
+}
+

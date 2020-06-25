@@ -103,6 +103,8 @@ p {
   }
 
   .wrapper-nav .main-navigation {
+    display: flex;
+    justify-content: center;
     height: 100%;
   }
 
@@ -173,14 +175,15 @@ li.facet-item {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  
 }
 
 li.facet-item label {
-  margin-left: 15px;
   font-family: "Roboto", sans-serif;
   font-size: 15px;
   color: #171717;
   letter-spacing: 0.62px;
+  margin: 5px 0 5px 15px;
 }
 /* mobile */
 .set-nav ul {
@@ -770,7 +773,7 @@ input[type=search] {
 }
 
 .home-section .product-view__home {
-  width: 100vw;
+  width: 100%;
   height: 510px;
   background-color: white;
   font-family: "Rubik", sans-serif;
@@ -1014,7 +1017,7 @@ input {
 
 .product-section .product-view,
 .related-beers .product-view {
-  width: 100vw;
+  width: 100%;
   height: 457px;
   background-color: white;
   font-family: "Rubik", sans-serif;
@@ -1115,7 +1118,7 @@ input {
 @media (min-width: 576px) {
   .product-view {
     max-width: 282px;
-    margin: 10px 20px;
+    /* margin: 10px 20px; */
   }
 }
 

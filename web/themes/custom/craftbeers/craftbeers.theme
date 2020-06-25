@@ -17,3 +17,15 @@ function craftbeer_preprocess_html(&$variables) {
     // Pass the price.
     $variables['price'] = $product->variations->entity->getPrice();
  }
+
+
+   /**
+   * Implements hook_theme_suggestions_HOOK_alter().
+   */
+  function craftbeers_theme_suggestions_page_alter(array &$suggestions, array $variables) {
+
+    if ($node = \Drupal::routeMatch()->getParameter('node')) {
+      $content_type = $node->bundle();
+      $suggestions[] = 'page__'.$content_type;
+    }
+  }
