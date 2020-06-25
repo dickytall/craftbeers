@@ -1,0 +1,23 @@
+uuid: 807a0b0e-ebe3-4cc3-87fb-6521204f316a
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_hero_link
+    - node.type.front
+  module:
+    - link
+id: node.front.field_hero_link
+field_name: field_hero_link
+entity_type: node
+bundle: front
+label: 'Header link'
+description: 'link to highlighted product'
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  link_type: 17
+  title: 1
+field_type: link

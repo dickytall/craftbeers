@@ -5,7 +5,7 @@ dependencies:
   config:
     - views.view.product_search
   module:
-    - system
+    - ctools
     - views
   theme:
     - craftbeers
@@ -19,12 +19,14 @@ settings:
   id: 'views_block:product_search-block_1'
   label: ''
   provider: views
-  label_display: visible
+  label_display: '0'
   views_label: ''
   items_per_page: none
 visibility:
-  request_path:
-    id: request_path
-    pages: '<front>'
+  'entity_bundle:node':
+    id: 'entity_bundle:node'
+    bundles:
+      front: front
     negate: false
-    context_mapping: {  }
+    context_mapping:
+      node: '@node.node_route_context:node'

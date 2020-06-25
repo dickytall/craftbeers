@@ -1774,7 +1774,7 @@ display:
     position: 1
     display_options:
       display_extenders: {  }
-      path: product
+      path: products
       exposed_block: true
       cache:
         type: none
@@ -1857,7 +1857,7 @@ display:
           field_rendering: false
           fallback_handler: search_api
           fallback_options:
-            link_to_item: false
+            link_to_item: true
             use_highlighting: false
             multi_type: separator
             multi_separator: ', '
