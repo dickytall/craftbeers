@@ -1,0 +1,8 @@
+uuid: d627d8b4-4672-48d5-80f6-2ab766b94f5a
+langcode: en
+status: true
+dependencies: {  }
+name: Brewery
+vid: brewery
+description: ''
+weight: 0

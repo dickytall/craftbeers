@@ -1,0 +1,14 @@
+uuid: 278c298a-27f5-44df-9059-a9ee23d61894
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: c4zaT5cyPxuTXI6JOWt3qRtMvICT9tHB6d9a5VG-CmQ
+id: feedback
+label: 'Website feedback'
+recipients:
+  - panadda@dickytall.com
+reply: ''
+weight: 0
+message: null
+redirect: null

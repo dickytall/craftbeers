@@ -1,0 +1,20 @@
+uuid: 5a2cfd90-1689-49ff-a481-5243ed62828c
+langcode: en
+status: false
+dependencies:
+  theme:
+    - craftbeers
+_core:
+  default_config_hash: 7rR9chwXvdM2H8OYMAYx9Zj3GGlPMrZp_M3ZA4thYTk
+id: craftbeers_page_title
+theme: craftbeers
+region: content
+weight: 4
+provider: null
+plugin: page_title_block
+settings:
+  id: page_title_block
+  label: 'Page title'
+  provider: core
+  label_display: '0'
+visibility: {  }

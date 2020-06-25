@@ -1,0 +1,29 @@
+uuid: e52d39cd-541b-41c8-abf1-ab08b775c78f
+langcode: en
+status: true
+dependencies:
+  config:
+    - commerce_product.commerce_product_type.beer
+    - field.storage.commerce_product.field_colour
+    - taxonomy.vocabulary.colour
+id: commerce_product.beer.field_colour
+field_name: field_colour
+entity_type: commerce_product
+bundle: beer
+label: Colour
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      colour: colour
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

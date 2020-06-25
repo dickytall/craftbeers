@@ -1,0 +1,23 @@
+uuid: 2f2de312-228e-494a-a434-b3e913bdeacd
+langcode: en
+status: true
+dependencies:
+  config:
+    - commerce_product.commerce_product_type.beer
+    - field.storage.commerce_product.body
+  module:
+    - text
+id: commerce_product.beer.body
+field_name: body
+entity_type: commerce_product
+bundle: beer
+label: Body
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: null
+settings:
+  display_summary: false
+  required_summary: false
+field_type: text_with_summary

@@ -1,0 +1,22 @@
+uuid: 4d60a24b-0d53-4199-b6c4-f7765dd90817
+langcode: en
+status: true
+dependencies:
+  theme:
+    - craftbeers
+_core:
+  default_config_hash: X9I1OB0W3WlWtrK-CNcg6hNWwa8wficanpH8pYnDZDE
+id: craftbeers_local_tasks
+theme: craftbeers
+region: content
+weight: -18
+provider: null
+plugin: local_tasks_block
+settings:
+  id: local_tasks_block
+  label: Tabs
+  provider: core
+  label_display: '0'
+  primary: true
+  secondary: true
+visibility: {  }

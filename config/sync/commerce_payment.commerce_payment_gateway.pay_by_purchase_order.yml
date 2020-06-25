@@ -1,0 +1,19 @@
+uuid: 572c89e2-28a8-4aeb-95fd-86974d1da40e
+langcode: en
+status: true
+dependencies: {  }
+id: pay_by_purchase_order
+label: 'Pay by purchase order'
+weight: null
+plugin: manual
+configuration:
+  instructions:
+    value: 'Credit approval and valid purchase order number required'
+    format: plain_text
+  display_label: Manual
+  mode: n/a
+  payment_method_types:
+    - credit_card
+  collect_billing_information: true
+conditions: {  }
+conditionOperator: AND

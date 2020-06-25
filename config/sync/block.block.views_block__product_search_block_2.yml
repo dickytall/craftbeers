@@ -1,0 +1,32 @@
+uuid: 52756283-8923-4157-ab68-fac0de398516
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.product_search
+  module:
+    - ctools
+    - views
+  theme:
+    - bartik
+id: views_block__product_search_block_2
+theme: bartik
+region: content
+weight: 0
+provider: null
+plugin: 'views_block:product_search-block_2'
+settings:
+  id: 'views_block:product_search-block_2'
+  label: ''
+  provider: views
+  label_display: visible
+  views_label: ''
+  items_per_page: '5'
+visibility:
+  'entity_bundle:commerce_product':
+    id: 'entity_bundle:commerce_product'
+    bundles:
+      beer: beer
+    negate: false
+    context_mapping:
+      commerce_product: '@commerce_product.product_route_context:commerce_product'

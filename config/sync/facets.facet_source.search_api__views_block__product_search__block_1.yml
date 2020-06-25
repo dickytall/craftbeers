@@ -1,0 +1,12 @@
+uuid: b9071cdd-db12-4524-b298-65050fbbe3f1
+langcode: en
+status: true
+dependencies: {  }
+id: search_api__views_block__product_search__block_1
+name: 'search_api:views_block__product_search__block_1'
+filter_key: ''
+url_processor: query_string
+breadcrumb:
+  active: false
+  before: true
+  group: false

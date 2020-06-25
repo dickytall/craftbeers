@@ -1,0 +1,137 @@
+uuid: 14d87581-a4f4-4473-9c88-7426796e6557
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.commerce_product_variation.attribute_volume
+    - field.storage.commerce_product.field_alcohol
+    - field.storage.commerce_product.field_brewery
+    - field.storage.commerce_product.field_colour
+    - field.storage.commerce_product.field_country
+    - field.storage.commerce_product.field_style
+    - field.storage.commerce_product.body
+    - search_api.server.database
+  module:
+    - commerce_product
+    - search_api
+id: products
+name: Products
+description: ''
+read_only: false
+field_settings:
+  attribute_volume:
+    label: Volume
+    datasource_id: 'entity:commerce_product_variation'
+    property_path: attribute_volume
+    type: integer
+    dependencies:
+      config:
+        - field.storage.commerce_product_variation.attribute_volume
+  field_alcohol:
+    label: Alcohol
+    datasource_id: 'entity:commerce_product'
+    property_path: field_alcohol
+    type: integer
+    dependencies:
+      config:
+        - field.storage.commerce_product.field_alcohol
+  field_brewery:
+    label: Brewery
+    datasource_id: 'entity:commerce_product'
+    property_path: field_brewery
+    type: integer
+    dependencies:
+      config:
+        - field.storage.commerce_product.field_brewery
+  field_colour:
+    label: Colour
+    datasource_id: 'entity:commerce_product'
+    property_path: field_colour
+    type: integer
+    dependencies:
+      config:
+        - field.storage.commerce_product.field_colour
+  field_country:
+    label: Country
+    datasource_id: 'entity:commerce_product'
+    property_path: field_country
+    type: integer
+    dependencies:
+      config:
+        - field.storage.commerce_product.field_country
+  field_style:
+    label: Style
+    datasource_id: 'entity:commerce_product'
+    property_path: field_style
+    type: integer
+    dependencies:
+      config:
+        - field.storage.commerce_product.field_style
+  number:
+    label: 'Price » Number'
+    datasource_id: 'entity:commerce_product_variation'
+    property_path: 'price:number'
+    type: string
+    dependencies:
+      module:
+        - commerce_product
+  processed:
+    label: 'Body » Processed text'
+    datasource_id: 'entity:commerce_product'
+    property_path: 'body:processed'
+    type: string
+    dependencies:
+      config:
+        - field.storage.commerce_product.body
+datasource_settings:
+  'entity:commerce_product':
+    bundles:
+      default: true
+      selected: {  }
+    languages:
+      default: true
+      selected: {  }
+  'entity:commerce_product_variation':
+    bundles:
+      default: true
+      selected: {  }
+    languages:
+      default: true
+      selected: {  }
+processor_settings:
+  add_url: {  }
+  aggregated_field: {  }
+  hierarchy:
+    fields:
+      field_brewery: taxonomy_term-parent
+    weights:
+      preprocess_index: -45
+  html_filter:
+    all_fields: false
+    fields: {  }
+    title: true
+    alt: true
+    tags:
+      b: 2
+      h1: 5
+      h2: 3
+      h3: 2
+      strong: 2
+    weights:
+      preprocess_index: -15
+      preprocess_query: -15
+  ignorecase:
+    all_fields: false
+    fields: {  }
+    weights:
+      preprocess_index: -20
+      preprocess_query: -20
+  language_with_fallback: {  }
+  rendered_item: {  }
+tracker_settings:
+  default:
+    indexing_order: fifo
+options:
+  index_directly: true
+  cron_limit: 50
+server: database

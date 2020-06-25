@@ -1,0 +1,22 @@
+uuid: d30c58c3-0c23-42a7-89c6-677aeebe3b7a
+langcode: en
+status: false
+dependencies:
+  module:
+    - system
+  theme:
+    - craftbeers
+_core:
+  default_config_hash: oXUb3JZR2WW5VOdw4HrhRicCsq51mCgLfRyvheG68ck
+id: craftbeers_breadcrumbs
+theme: craftbeers
+region: content
+weight: 1
+provider: null
+plugin: system_breadcrumb_block
+settings:
+  id: system_breadcrumb_block
+  label: Breadcrumbs
+  provider: system
+  label_display: '0'
+visibility: {  }

@@ -1,0 +1,22 @@
+uuid: b500345f-7bf7-4a55-8136-33e08c216b19
+langcode: en
+status: false
+dependencies:
+  module:
+    - help
+  theme:
+    - craftbeers
+_core:
+  default_config_hash: 8I8iACSa0sKO3k3jlvUG1ge52rfcKX7USJAQYnzuBgg
+id: craftbeers_help
+theme: craftbeers
+region: content
+weight: -2
+provider: null
+plugin: help_block
+settings:
+  id: help_block
+  label: Help
+  provider: help
+  label_display: '0'
+visibility: {  }

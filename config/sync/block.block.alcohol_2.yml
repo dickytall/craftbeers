@@ -1,0 +1,23 @@
+uuid: afd8819b-37ab-4dce-802c-764d4fffb96f
+langcode: en
+status: false
+dependencies:
+  config:
+    - facets.facet.alcohol
+  module:
+    - facets
+  theme:
+    - craftbeers
+id: alcohol_2
+theme: craftbeers
+region: content
+weight: -11
+provider: null
+plugin: 'facet_block:alcohol'
+settings:
+  id: 'facet_block:alcohol'
+  label: Alcohol
+  provider: facets
+  label_display: visible
+  block_id: alcohol_2
+visibility: {  }

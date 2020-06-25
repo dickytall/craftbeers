@@ -1,0 +1,23 @@
+uuid: 5aee7715-b2ad-471f-bfe6-977b45d91de1
+langcode: en
+status: false
+dependencies:
+  config:
+    - facets.facet.brewery
+  module:
+    - facets
+  theme:
+    - craftbeers
+id: brewery_2
+theme: craftbeers
+region: content
+weight: -12
+provider: null
+plugin: 'facet_block:brewery'
+settings:
+  id: 'facet_block:brewery'
+  label: Brewery
+  provider: facets
+  label_display: visible
+  block_id: brewery_2
+visibility: {  }

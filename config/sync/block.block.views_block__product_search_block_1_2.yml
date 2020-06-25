@@ -1,0 +1,30 @@
+uuid: df4109c7-fb82-4fd1-b54e-2ea9da913a62
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.product_search
+  module:
+    - system
+    - views
+  theme:
+    - craftbeers
+id: views_block__product_search_block_1_2
+theme: craftbeers
+region: content
+weight: -13
+provider: null
+plugin: 'views_block:product_search-block_1'
+settings:
+  id: 'views_block:product_search-block_1'
+  label: ''
+  provider: views
+  label_display: visible
+  views_label: ''
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    pages: '<front>'
+    negate: false
+    context_mapping: {  }

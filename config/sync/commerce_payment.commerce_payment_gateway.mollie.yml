@@ -1,0 +1,21 @@
+uuid: 126806e3-72ef-4a59-b38e-5fc39c1c619d
+langcode: en
+status: true
+dependencies:
+  module:
+    - commerce_mollie
+id: mollie
+label: Mollie
+weight: null
+plugin: mollie
+configuration:
+  api_key_test: test_7wWH8sBuGDjJ9jjygsn9ebzJHsufzk
+  api_key_live: live_
+  callback_domain: 'craftbeer-local:888'
+  display_label: Mollie
+  mode: test
+  payment_method_types:
+    - mollie
+  collect_billing_information: true
+conditions: {  }
+conditionOperator: AND

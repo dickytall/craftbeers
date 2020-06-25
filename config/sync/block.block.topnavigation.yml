@@ -1,0 +1,25 @@
+uuid: dffa8f9b-72c7-4997-9066-7d5f8d98805f
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.top-navigation
+  module:
+    - system
+  theme:
+    - craftbeers
+id: topnavigation
+theme: craftbeers
+region: secondNav
+weight: 0
+provider: null
+plugin: 'system_menu_block:top-navigation'
+settings:
+  id: 'system_menu_block:top-navigation'
+  label: 'Top navigation'
+  provider: system
+  label_display: '0'
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility: {  }

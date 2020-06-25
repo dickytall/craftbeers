@@ -1,0 +1,23 @@
+uuid: 191bfdbf-a77a-4445-9663-7f1ab75d28bf
+langcode: en
+status: true
+dependencies:
+  config:
+    - facets.facet.country
+  module:
+    - facets
+  theme:
+    - craftbeers
+id: country_5
+theme: craftbeers
+region: sidebar
+weight: -17
+provider: null
+plugin: 'facet_block:country'
+settings:
+  id: 'facet_block:country'
+  label: Country
+  provider: facets
+  label_display: visible
+  block_id: country_5
+visibility: {  }

@@ -1,0 +1,14 @@
+uuid: 9fb8dbe0-67b6-4309-8196-0e5867f539f9
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: 3vA4FKQ1Qu8B1R8UdGPnmMfJrYO6Y6uMqeNgDgXxods
+id: default
+label: Beer
+orderItemType: default
+generateTitle: true
+traits:
+  - purchasable_entity_dimensions
+  - purchasable_entity_shippable
+locked: false

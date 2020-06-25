@@ -1,0 +1,24 @@
+uuid: a54c7488-267c-45c6-a56e-5b6bdf0758d7
+langcode: en
+status: true
+dependencies:
+  module:
+    - commerce_cart
+  theme:
+    - craftbeers
+_core:
+  default_config_hash: s0blj-MttMjnmKEuX66B0R-2HUXDx0dSLXhnrDIvQi8
+id: craftbeers_shopping_cart
+theme: craftbeers
+region: cart
+weight: -17
+provider: null
+plugin: commerce_cart
+settings:
+  id: commerce_cart
+  label: 'Shopping Cart'
+  provider: commerce_cart
+  label_display: '0'
+  dropdown: true
+  item_text: items
+visibility: {  }

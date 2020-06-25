@@ -1,0 +1,30 @@
+uuid: e69309da-a0fc-4bed-90ed-e8be5d21ee85
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.product_search
+  module:
+    - system
+    - views
+  theme:
+    - bartik
+id: views_block__product_search_block_1
+theme: bartik
+region: content
+weight: 0
+provider: null
+plugin: 'views_block:product_search-block_1'
+settings:
+  id: 'views_block:product_search-block_1'
+  label: ''
+  provider: views
+  label_display: visible
+  views_label: ''
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    pages: '<front>'
+    negate: false
+    context_mapping: {  }

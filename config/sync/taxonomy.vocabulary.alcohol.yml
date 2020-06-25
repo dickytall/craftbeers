@@ -1,0 +1,8 @@
+uuid: 462aee20-ad09-4b31-b7da-05ad9e75ecb8
+langcode: en
+status: true
+dependencies: {  }
+name: 'Alcohol %'
+vid: alcohol
+description: ''
+weight: 0

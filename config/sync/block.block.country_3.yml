@@ -1,0 +1,23 @@
+uuid: bca9df98-f1ab-4e22-8296-e786f18a1a67
+langcode: en
+status: true
+dependencies:
+  config:
+    - facets.facet.country
+  module:
+    - facets
+  theme:
+    - bartik
+id: country_3
+theme: bartik
+region: sidebar_first
+weight: -9
+provider: null
+plugin: 'facet_block:country'
+settings:
+  id: 'facet_block:country'
+  label: Country
+  provider: facets
+  label_display: visible
+  block_id: country_3
+visibility: {  }

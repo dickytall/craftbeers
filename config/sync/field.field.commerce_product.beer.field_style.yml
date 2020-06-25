@@ -1,0 +1,29 @@
+uuid: b198f6c2-1211-45a0-aced-b64bad6128d4
+langcode: en
+status: true
+dependencies:
+  config:
+    - commerce_product.commerce_product_type.beer
+    - field.storage.commerce_product.field_style
+    - taxonomy.vocabulary.style
+id: commerce_product.beer.field_style
+field_name: field_style
+entity_type: commerce_product
+bundle: beer
+label: Style
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      style: style
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

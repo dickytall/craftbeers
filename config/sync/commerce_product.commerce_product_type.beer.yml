@@ -1,0 +1,12 @@
+uuid: 3e382006-c1b6-4d83-aea3-e6b97d464fd8
+langcode: en
+status: true
+dependencies: {  }
+id: beer
+label: Beer
+description: 'Simple beer '
+variationType: default
+multipleVariations: true
+injectVariationFields: false
+traits: {  }
+locked: false

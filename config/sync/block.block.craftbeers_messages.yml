@@ -1,0 +1,22 @@
+uuid: 37484a91-5c95-44d4-a468-b4c826257d0b
+langcode: en
+status: false
+dependencies:
+  module:
+    - system
+  theme:
+    - craftbeers
+_core:
+  default_config_hash: KHQIJ7Vfl25lTjzIc7qIvnuistt-Mw2O0kG4jCofmkI
+id: craftbeers_messages
+theme: craftbeers
+region: content
+weight: 3
+provider: null
+plugin: system_messages_block
+settings:
+  id: system_messages_block
+  label: 'Status messages'
+  provider: system
+  label_display: '0'
+visibility: {  }

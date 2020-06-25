@@ -1,0 +1,23 @@
+uuid: 87b7e5a3-8366-4c4e-8336-0ae74d421f45
+langcode: en
+status: true
+dependencies:
+  config:
+    - facets.facet.brewery
+  module:
+    - facets
+  theme:
+    - bartik
+id: brewery
+theme: bartik
+region: sidebar_first
+weight: -8
+provider: null
+plugin: 'facet_block:brewery'
+settings:
+  id: 'facet_block:brewery'
+  label: Brewery
+  provider: facets
+  label_display: visible
+  block_id: brewery
+visibility: {  }

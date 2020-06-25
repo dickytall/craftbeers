@@ -1,0 +1,23 @@
+uuid: 7828d5b8-44bf-432c-ae31-e44ac4c2e823
+langcode: en
+status: false
+dependencies:
+  config:
+    - facets.facet.style
+  module:
+    - facets
+  theme:
+    - craftbeers
+id: style_2
+theme: craftbeers
+region: content
+weight: -8
+provider: null
+plugin: 'facet_block:style'
+settings:
+  id: 'facet_block:style'
+  label: Style
+  provider: facets
+  label_display: visible
+  block_id: style_2
+visibility: {  }

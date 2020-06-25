@@ -1,0 +1,22 @@
+uuid: bec5dd42-0a46-4a83-aedf-b235f8117f4f
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - craftbeers
+_core:
+  default_config_hash: 9EoWV2Lot6FVSr50t4hoKgiz1LIXYWNG-IIPYsWxBqo
+id: craftbeers_content
+theme: craftbeers
+region: content
+weight: -15
+provider: null
+plugin: system_main_block
+settings:
+  id: system_main_block
+  label: 'Main page content'
+  provider: system
+  label_display: '0'
+visibility: {  }

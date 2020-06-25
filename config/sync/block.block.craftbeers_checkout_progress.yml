@@ -1,0 +1,28 @@
+uuid: cab85821-98a2-4724-a31c-07f49be8f93e
+langcode: en
+status: true
+dependencies:
+  module:
+    - commerce_checkout
+    - system
+  theme:
+    - craftbeers
+_core:
+  default_config_hash: OawPvVMFMZhrfbLL6TEVWKRLl-SVdAKUW56fyMKavT4
+id: craftbeers_checkout_progress
+theme: craftbeers
+region: content
+weight: -16
+provider: null
+plugin: commerce_checkout_progress
+settings:
+  id: commerce_checkout_progress
+  label: 'Checkout progress'
+  provider: commerce_checkout
+  label_display: '0'
+visibility:
+  request_path:
+    id: request_path
+    pages: '/checkout/*'
+    negate: false
+    context_mapping: {  }
