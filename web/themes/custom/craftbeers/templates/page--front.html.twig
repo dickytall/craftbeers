@@ -2,13 +2,13 @@
 
     {% include directory ~ '/templates/menu/navigation.html.twig' %}
 
-    <div class="hero-image">
+    <div class="appelen">
+    {{ content.field_hero_img }}
       <p>
-        Pilsner Urquell Christmas edition
-        Nu verkrijgbaar bij Craftbeers.
+        {{ content.field_hero_text }}
       </p>
       <div class="discover-btn">
-        <a href="">Ontdek hem nu</a>
+       {{ content.field_hero_link }}
       </div>
     </div>
 

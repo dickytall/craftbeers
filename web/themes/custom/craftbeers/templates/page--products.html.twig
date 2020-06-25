@@ -1,0 +1,38 @@
+  <div class="container-fluid">
+
+    {% include directory ~ '/templates/menu/navigation.html.twig' %}
+
+    <div class="product-wrapper">
+      <div class="wrap row no-gutters">
+        <div class="sidebar col-sm-12 facets__dropdown">
+          <p class="dropdown__wrapper">
+            <a class="" data-toggle="collapse" href="#collapseExample" role="button"
+              aria-expanded="false" aria-controls="collapseExample">
+              filter
+            </a>
+          </p>
+          <div class="collapse" id="collapseExample">
+            {{ page.sidebar }}
+          </div>
+        </div>
+        <div class="sidebar  col-md-3 col-lg-2 facets__web">
+          {{ page.sidebar }}
+        </div>
+
+
+
+
+
+        <div class="product-section  col-md-9 col-lg-10">
+          <div class="pro-view">
+            {{ page.content }}
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+    {% include directory ~ '/templates/menu/footer.html.twig' %}
+
+  </div>
