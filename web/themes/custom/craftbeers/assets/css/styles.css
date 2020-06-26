@@ -720,7 +720,7 @@ input[type=search] {
   padding-bottom: 150px;
 }
 
-.home-view {
+/* .home-view {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -729,7 +729,7 @@ input[type=search] {
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
-}
+} */
 
 .content-wrapper {
   margin-top: 156px;
@@ -738,7 +738,7 @@ input[type=search] {
 }
 
 .product-wrapper {
-  margin-top: 156px;
+
   padding-top: 30px;
 }
 
@@ -746,7 +746,7 @@ input[type=search] {
 
   .content-wrapper,
   .product-wrapper {
-    margin-top: 226px;
+   
     z-index: -20;
     padding-top: 50px;
   }
