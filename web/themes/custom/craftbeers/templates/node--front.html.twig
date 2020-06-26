@@ -1,0 +1,27 @@
+
+    <div class="appelen">
+    {{ content.field_hero_img }}
+      <p>
+        {{ content.field_hero_text }}
+      </p>
+      <div class="discover-btn">
+       {{ content.field_hero_link }}
+      </div>
+    </div>
+
+ <div class="home-section wrap">
+  <div class="home-view">
+                  {% for row in rows %}
+                {%
+               set row_classes = [
+                default_row_class ? 'views-row',
+                              ]
+                       %}
+                <div{{ row.attributes.addClass(row_classes) }}>
+                  {{- row.content -}}
+              </div>
+              {% endfor %}
+</div>
+</div>
+    <!-- -->
+
