@@ -147,6 +147,12 @@ p {
     color: white;
   }
 
+  .set-nav ul li a:hover {
+    text-decoration: none;
+    color: #DC7828;
+  }
+   
+
 
 }
 
@@ -215,6 +221,11 @@ li.facet-item label {
 
 .set-nav ul li a {
   color: white;
+}
+
+.set-nav ul li a:hover {
+  text-decoration: none;
+  color: #DC7828;
 }
 
 .wrapper-detail {
