@@ -1,14 +1,4 @@
-/* .cart-block--link__expand{
-    background-image: url(../img/cart.svg);
-    background-repeat: no-repeat;
-} */
-/* PRODUCT  PAGE GRID */
-
-/* .grid-x.grid-margin-x nav {
-  /* clear: both; 
-} */
-
-.grid-x.grid-margin-x{
+.grid-x.grid-margin-x {
   /* float: left; */
   display: flex;
   flex-wrap: wrap;
@@ -17,8 +7,26 @@
 
 }
 
-.grid-x.grid-margin-x nav{
-    width: 100%;
+.grid-x.grid-margin-x nav {
+  width: 100%;
+}
+
+.info-pages #block-craftbeers-content {
+  margin-top: 88px;
+  padding: 70px 0;
+
+}
+
+#block-craftbeers-content {
+  margin-top: 0;
+  /* padding: 70px 0; */
+
+}
+
+.sidebar {
+  margin-top: 88px;
+  padding: 70px 0;
+
 }
 
 .cake {
@@ -71,24 +79,24 @@
 
 
 .modal {
-    width: 387px;
-    min-height: 400px;
-    top: 156px;
-    left: unset;
-    right: 60px;
-    bottom: unset;
-    background: #FFFFFF;
-    box-shadow: 0 0 25px 0 rgba(0, 0, 0, 0.20);
-    z-index: 20;
-  }
+  width: 387px;
+  min-height: 400px;
+  top: 156px;
+  left: unset;
+  right: 60px;
+  bottom: unset;
+  background: #FFFFFF;
+  box-shadow: 0 0 25px 0 rgba(0, 0, 0, 0.20);
+  z-index: 20;
+}
 
 
 .cart-block--contents__inner {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    align-items: center;
-  }
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
+}
 
 @media (min-width: 992px) {
 
@@ -103,23 +111,40 @@
     box-shadow: 0 0 25px 0 rgba(0, 0, 0, 0.20);
   }
 
-  /* #block-craftbeers-content {
-    margin-top: 382px;
-  } */
+  #block-craftbeers-content,
+  .front-page #block-craftbeers-content {
+    margin-top: 97px;
+    padding: 100px 0;
+
+  }
+
+
+
+  .info-pages #block-craftbeers-content {
+    margin-top: 187px;
+    padding: 100px 0;
+
+  }
+
+  .sidebar {
+    margin-top: 97px;
+    padding: 100px 0;
+
+  }
 
 
 }
 
 @media (min-width: 1200px) {
 
-    .grid-x.grid-margin-x{
-        /* float: left; */
-        display: flex;
-        flex-wrap: wrap;
-        margin: 0 15px;
-        justify-content: normal;
-      
-      }
+  .grid-x.grid-margin-x {
+    /* float: left; */
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 15px;
+    justify-content: normal;
+
+  }
 
 }
 
@@ -155,29 +180,138 @@ table.cols-0 td {
 }
 
 .cart-block--contents__links a:hover {
-    text-decoration: none;
-    box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.20);
+  text-decoration: none;
+  box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.20);
 
 }
 
 
 /* FACETS COLLAPSE REMOVE ON TABLET  */
-.facets__web{
-    display: none;
+.facets__web {
+  display: none;
+}
+
+/* HOME HERO */
+
+.hero-text {
+  position: absolute;
+  bottom: 130px;
+  left: 25px;
+}
+
+.discover-btn {
+  position: absolute;
+  bottom: 50px;
+  left: 25px;
+}
+
+.hero-image__wrapper {
+  position: relative;
+  margin-top: 118px;
+}
+
+.hero-image__wrapper img{
+  width: 100%;
 }
 
 @media (min-width: 768px) {
-.facets__dropdown{
+  .facets__dropdown {
     display: none;
-}
+  }
 
-.facets__web{
+  .facets__web {
     display: block;
-}
+  }
+
+
+
+  .sidebar {
+    margin-top: 88px;
+    padding: 70px 0;
+
+  }
+
+  #block-craftbeers-content {
+    margin-top: 88px;
+    padding: 70px 0;
+
+  }
+
+  .front-page #block-craftbeers-content {
+    margin-top: 88px;
+    padding: 0;
+
+  }
+
+  .hero-image__wrapper {
+    position: relative;
+    /* margin-top: 147px; */
+    
+  }
+
 }
 
 
-.facet-item__value, .facets-checkbox{
-    cursor: pointer;
+.facet-item__value,
+.facets-checkbox {
+  cursor: pointer;
 }
 
+
+/* STYLE FACETS DROPDOWN */
+.facets__mobile {
+  display: flex;
+  flex-wrap: wrap;
+  height: 470px;
+  justify-content: space-between;
+}
+
+.facets__dropdown .block-facet--checkbox {
+  width: 45%;
+  padding: 0 15px;
+}
+
+.dropdown__wrapper {
+  padding: 0 15px;
+}
+
+
+
+
+
+
+
+/* HOME */
+
+.product-view__home {
+  background-color: white;
+}
+
+
+/* .views-field-nothing{
+  display: none;
+} */
+
+/* CART CHECKOUT AND CART */
+
+#views-form-commerce-cart-form-default-1 td, .checkout-order-summary td{
+  padding: 15px;
+}
+
+#views-form-commerce-cart-form-default-1 a, .checkout-order-summary a{
+  color: #DC7828;
+}
+
+#views-form-commerce-cart-form-default-1 .button, #edit-sidebar-coupon-redemption-form .button{
+  padding: 3px;
+}
+
+#edit-sidebar-coupon-redemption-form-code{
+margin: 5px 0 15px;
+}
+
+/* PAYMENT METHODE SECTION */
+
+.layout-region-checkout-footer{
+  margin-top: 20px;
+}
