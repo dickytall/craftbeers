@@ -10,11 +10,22 @@
 
 }
 
+.front-page .grid-x.grid-margin-x {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 50px 15px;
+  justify-content: center;
+
+}
+
+
+
 .grid-x.grid-margin-x nav {
   width: 100%;
 }
 
-.info-pages #block-craftbeers-content {
+.info-pages #block-craftbeers-content,
+.news-page #block-craftbeers-content {
   /* margin-top: 88px; */
   padding: 70px 15px;
 
@@ -38,9 +49,17 @@
 }
 
 @media (min-width: 992px) {
-.pos-block {
+  .pos-block {
     height: 226px;
     width: 100%;
+  }
+
+  .front-page .grid-x.grid-margin-x {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 50px 15px;
+    justify-content: flex-start;
+
   }
 }
 
@@ -51,10 +70,10 @@
 
 .mobile-menu {
   height: 100%;
-  
+
 }
 
-.mobile-menu ul{
+.mobile-menu ul {
   -ms-flex-direction: column;
   flex-direction: column;
 }
@@ -184,6 +203,11 @@
 
   }
 
+  #block-views-block-product-search-block-1-2 {
+    max-width: 1260px;
+    margin: 0 auto;
+  }
+
 }
 
 
@@ -201,7 +225,8 @@
     background: #FFFFFF;
     box-shadow: 0 0 25px 0 rgba(0, 0, 0, 0.20);
   }
-/* 
+
+  /* 
   #block-craftbeers-content {
     /* margin: 97px; 
     padding: 100px 0;
@@ -218,30 +243,37 @@
 
 
   .info-pages #block-craftbeers-content {
-    margin: 187px auto 0 auto;
-    padding: 100px 0;
+    margin: 0 auto;
+    padding: 70px 15px;
     min-height: 58vh;
-    max-width: 750px;
     width: 100%;
-
   }
 
-  /* .sidebar {
+  .news-page #block-craftbeers-content {
+    margin: 0 auto;
     padding: 100px 0;
-
-  } */
+    width: 100%;
+  }
 
 
 }
 
 @media (min-width: 1200px) {
+  .front-page .grid-x.grid-margin-x {
+    /* float: left; */
+    display: flex;
+    flex-wrap: wrap;
+    margin: 50px 0;
+    justify-content: flex-start;
+
+  }
 
   .grid-x.grid-margin-x {
     /* float: left; */
     display: flex;
     flex-wrap: wrap;
     margin: 0 15px;
-    justify-content: end;
+    justify-content: flex-start;
 
   }
 
@@ -330,9 +362,14 @@
   padding: 0 15px;
 }
 
+.hero-text {
+  margin-bottom: 40px;
+}
+
 @media (min-width: 768px) {
   .hero-text {
-    width: 60%;
+    width: 50%;
+    margin-bottom: 50px;
   }
 
 
@@ -364,9 +401,8 @@
 
 /* HOME */
 
-.product-view__home {
-  background-color: white;
-}
+
+
 
 
 /* .views-field-nothing{
@@ -592,6 +628,17 @@ input[type=email] {
   margin-top: 20px;
 }
 
+/* EXTRA TEXT CHECKOUT */
+
+#block-craftbeers-checkout-progress,
+.status-cart {
+  padding: 40px 15px 0;
+}
+
+.status-cart {
+  font-size: 18px;
+  color: red;
+}
 
 
 
@@ -760,6 +807,87 @@ a:hover {
 
 }
 
+.article-wrapper {
+  max-width: 750px;
+  margin: 30px auto;
+}
+
 .article-wrapper h1 {
   margin: 50px 0;
+}
+
+.info-pages article {
+  max-width: 750px;
+  margin: 30px auto;
+}
+
+
+/* FIX SUBMIT  */
+
+.searchBar input[type=submit] {
+  display: none;
+}
+
+/* COOKIE */
+
+.cookie-overlay {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  background-color: #DC7828;
+  color: white;
+  z-index: 50000;
+  position: fixed;
+  display: flex;
+  /* display: none; */
+  justify-content: space-evenly;
+  flex-direction: column;
+  align-items: center;
+  overflow-y: unset;
+  padding: 15px;
+
+}
+
+.button-overlay {
+  display: flex;
+  justify-content: center;
+  margin-top: 25px;
+}
+
+.cookie-btn {
+  height: 46px;
+  padding: 9px 25px;
+  border: 1px solid #FFFFFF;
+  border-radius: 7px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-size: 18px;
+  color: #FFFFFF;
+  letter-spacing: 0.53px;
+  text-align: center;
+  margin: 0 20px 0 0;
+}
+
+.cookie-btn:hover {
+  background: #FFFFFF;
+  border: 1px solid #FFFFFF;
+  border-radius: 7px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  color: #DC7828;
+  letter-spacing: 0.53px;
+  text-align: center;
+}
+
+.cookie-txt {
+  max-width: 640px;
+  width: 100%;
+}
+
+
+/* FOOTER NAV  */
+
+#block-craftbeers-footer ul li {
+  list-style-type: none;
+  text-decoration: none;
 }

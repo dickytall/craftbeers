@@ -46,6 +46,7 @@
         "drupal/search_api": "^1.16",
         "drupal/swiftmailer": "^1.0",
         "drupal/token": "^1.0",
+        "drupal/webform": "^5.19",
         "drupalcommerce/commerce_base": "dev-8.x-1.x",
         "drush/drush": "^10.3",
         "oomphinc/composer-installers-extender": "^1.1",
