@@ -544,7 +544,7 @@ input[type=search] {
   text-transform: uppercase;
 }
 
-.footer-orange [type='text'] {
+.footer-orange .form-email {
   width: 100%;
   background-color: transparent;
   color: white;
@@ -590,9 +590,10 @@ input[type=search] {
   /* Microsoft Edge */
   color: white;
 }
-
-.footer-orange [type='submit'],
-.footer-orange [type='button'] {
+.footer-orange .form-actions {
+  text-align: right;
+}
+.footer-orange .webform-button--submit {
   background: white;
   border: 1px solid #DC7828;
   border-radius: 7px;
@@ -604,6 +605,7 @@ input[type=search] {
   letter-spacing: 0.53px;
   text-align: center;
   width: 171px;
+  padding: 5px;
 }
 
 .footer-orange .submit-newsletter {

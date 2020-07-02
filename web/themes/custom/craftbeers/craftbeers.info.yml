@@ -26,5 +26,5 @@ regions:
     cart: 'Cart'
     footer: 'Footer'
     search: 'Search'
-    appels: 'appels'
+    footerNews: 'Footer News'
 
