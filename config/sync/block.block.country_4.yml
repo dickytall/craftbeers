@@ -1,6 +1,6 @@
 uuid: c6060928-7390-4175-8b09-91aa1dcb7260
 langcode: en
-status: true
+status: false
 dependencies:
   config:
     - facets.facet.country
@@ -10,7 +10,7 @@ dependencies:
     - craftbeers
 id: country_4
 theme: craftbeers
-region: appels
+region: content
 weight: 0
 provider: null
 plugin: 'facet_block:country'

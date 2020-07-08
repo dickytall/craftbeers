@@ -5,6 +5,7 @@ dependencies:
   config:
     - field.storage.node.field_content
     - node.type.article
+    - paragraphs.paragraphs_type.article_title
     - paragraphs.paragraphs_type.media
     - paragraphs.paragraphs_type.text
   module:
@@ -24,13 +25,17 @@ settings:
   handler_settings:
     negate: 0
     target_bundles:
-      media: media
+      article_title: article_title
       text: text
+      media: media
     target_bundles_drag_drop:
+      article_title:
+        enabled: true
+        weight: -7
       media:
         enabled: true
-        weight: 3
+        weight: -5
       text:
         enabled: true
-        weight: 4
+        weight: -6
 field_type: entity_reference_revisions

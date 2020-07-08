@@ -1,0 +1,25 @@
+uuid: e17d9b14-660e-4f9f-9a83-b1906f2c24be
+langcode: en
+status: true
+dependencies:
+  config:
+    - webform.webform.nieuwsbrief
+  module:
+    - webform
+  theme:
+    - craftbeers
+id: webform
+theme: craftbeers
+region: footerNews
+weight: -18
+provider: null
+plugin: webform_block
+settings:
+  id: webform_block
+  label: Webform
+  provider: webform
+  label_display: '0'
+  webform_id: nieuwsbrief
+  default_data: ''
+  redirect: false
+visibility: {  }

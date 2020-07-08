@@ -39,7 +39,7 @@ content:
     region: content
   field_teaser_img:
     weight: 103
-    label: above
+    label: hidden
     settings:
       image_style: ''
       image_link: ''
@@ -48,7 +48,7 @@ content:
     region: content
   field_text_summary:
     weight: 102
-    label: above
+    label: hidden
     settings: {  }
     third_party_settings: {  }
     type: text_default

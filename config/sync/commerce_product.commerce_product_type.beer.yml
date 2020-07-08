@@ -7,6 +7,6 @@ label: Beer
 description: 'Simple beer '
 variationType: default
 multipleVariations: true
-injectVariationFields: false
+injectVariationFields: true
 traits: {  }
 locked: false

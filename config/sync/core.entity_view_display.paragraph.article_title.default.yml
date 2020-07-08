@@ -1,0 +1,22 @@
+uuid: 9a98c285-5113-4050-b9ed-4f73d6e3e64a
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.article_title.field_title
+    - paragraphs.paragraphs_type.article_title
+id: paragraph.article_title.default
+targetEntityType: paragraph
+bundle: article_title
+mode: default
+content:
+  field_title:
+    weight: 0
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+hidden:
+  search_api_excerpt: true
