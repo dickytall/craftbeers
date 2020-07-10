@@ -1,50 +1,53 @@
   <div class="footer row mx-0">
-            <div class="footer-black col-md-6 col-sm-12">
-                <div class="social-media">
-                    <a href="index.html">
-                        <img src="/{{directory}}/assets/icon/logo-white.png" alt="" class="logo-white">
-                    </a>
+    <div class="footer-orange col-lg-6 col-md-6 col-sm-12 order-1 order-md-12">
+      <div class="newsletter">
+        <h4>Ontvang onze nieuwsbrief </h4>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec id nisl maximus, sagittis risus sed, aliquam
+          mi. Suspendisse potenti. </p>
+        {{ page.footerNews }}
+      </div>
+    </div>
+    
+    <div class="footer-black col-lg-6 col-md-6 col-sm-12 order-12 order-md-1">
+      <div class="social-media">
+        <a href="index.html">
+          <img src="/{{directory}}/assets/icon/logo-white.png" alt="" class="logo-white">
+        </a>
 
-                    <div class="social-icons">
-                        <a href="https://www.facebook.com/DeCaignyDranken/">
-                            <img src="/{{directory}}/assets/img/fb-icon.png" alt="">
-                        </a>
-                        <a href="https://www.instagram.com/decaignydranken/">
-                            <img src="/{{directory}}/assets/img/ig-icon.png" alt="">
-                        </a>
-                        {# <a href="">
+        <div class="social-icons">
+          <a href="https://www.facebook.com/DeCaignyDranken/">
+            <img src="/{{directory}}/assets/img/fb-icon.png" alt="">
+          </a>
+          <a href="https://www.instagram.com/decaignydranken/">
+            <img src="/{{directory}}/assets/img/ig-icon.png" alt="">
+          </a>
+          {# <a href="">
                             <img src="/{{directory}}/assets/img/twitter-icon.png" alt="">
                         </a> #}
 
-                    </div>
-                </div>
-                <div class="footer-info">
-                    <div class="footer-menu">
-                        <nav>
-                            <ul>
+        </div>
+      </div>
+      <div class="footer-info">
+        <div class="footer-menu">
+          <nav>
+            <ul>
 
-                            {{ page.footer }}
-                                {# <li><a href="">Info </a></li>
+              {{ page.footer }}
+              {# <li><a href="">Info </a></li>
                                 <li><a href="">Shipping </a></li>
                                 <li><a href="">Terms & Conditions </a></li>
                                 <li><a href="">Contacteer ons</a> </li> #}
-                            </ul>
-                        </nav>
-                    </div>
-                    <div class="footer-nix">
-                        <img src="/{{directory}}/assets/img/nix-logo.svg" alt="">
-                        <p>
-                            Wij verkopen geen alcohol onder de 18 jaar. <br>
-                           Jonger dan 24jaar? Laat je legitimatie zien!
-                        </p>
-                    </div>
-                </div>
-            </div>
-            <div class="footer-orange col-md-6 col-sm-12">
-                <div class="newsletter">
-                    <h4>Ontvang onze nieuwsbrief </h4>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec id nisl maximus, sagittis risus sed, aliquam mi. Suspendisse potenti. </p>
-                    {{ page.footerNews }}
-                </div>
-            </div>
+            </ul>
+          </nav>
         </div>
+        <div class="footer-nix">
+          <img src="/{{directory}}/assets/img/nix-logo.svg" alt="">
+          <p>
+            Wij verkopen geen alcohol onder de 18 jaar. <br>
+            Jonger dan 24jaar? Laat je legitimatie zien!
+          </p>
+        </div>
+      </div>
+    </div>
+
+  </div>
