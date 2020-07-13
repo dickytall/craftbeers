@@ -905,6 +905,58 @@ a:hover {
 #block-craftbeers-footer ul li {
   list-style-type: none;
   text-decoration: none;
+  padding: 10px 0;
 }
 
 
+/*  FOOTER POSITION MOBILE TO DESKTOP */
+
+
+@media (min-width: 768px) {
+.footer-black .social-media {
+  height: 60px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+
+.footer-black .footer-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  margin-top: 80px;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+
+
+.footer-black .footer-nix {
+  -ms-flex-item-align: end;
+  align-self: flex-end;
+  text-align: right;
+}
+
+.footer-black .footer-nix img {
+  padding-bottom: 7px;
+}
+
+.social-icons {
+  margin: 20px 0;
+}
+
+.footer-orange {
+  padding: 60px 130px;
+}
+
+.footer-orange .webform-button--submit {
+  width: 171px;
+}
+}
