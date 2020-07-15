@@ -20,37 +20,42 @@
  */
 #}
 
-<article{{ attributes }} class="product-detail">
+<article{{ attributes.addClass('product-detail') }}>
 
-{{ product.title }}
+  {{ product.title }}
 
-<div class="beer-img">
-{{ product.field_img }}
+  <div class="flex-this">
+   
+      <div class="beer-img">
+        {{ product.field_img }}
 
-</div>
+      </div>
+   
 
-<div class="detail-product__information">
-{{ product.field_brewery }}
-  {{ product.body }}
-  {# {{- product -}} #}
-<div class="detail-product__facets">
-<div>
-{{ product.field_alcohol }}
-{{ product.field_colour }}
-</div>
+    <div class="detail-product__information">
+      {{ product.field_brewery }}
+      {{ product.body }}
+      {# {{- product -}} #}
+      <div class="detail-product__facets pro-info">
+        <div>
+          {{ product.field_alcohol }}
+          {{ product.field_colour }}
+        </div>
+        <div>
+          {{ product.field_country }}
+          {{ product.field_style }}
+        </div>
+      </div>
+      <div class="detail-product__cart order">
+        {{ product.variation_price }}
+        {{ product.variations }}
 
-<div>
-{{ product.field_country }}
-{{ product.field_style }}
-</div>
-</div>
-<div class="detail-product__cart order">
-{{ product.variation_price }}
-  {{ product.variations }}
+      </div>
 
-</div>
+    </div>
 
-</div>
+
+  </div>
 
 
 
@@ -58,6 +63,4 @@
 
 
   {# {{ product_entity }} #}
-</article>
-
-
+  </article>

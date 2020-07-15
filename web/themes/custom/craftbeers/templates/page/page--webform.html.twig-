@@ -45,12 +45,14 @@
  * @ingroup themeable
  */
 #}
-<div class="container-fluid">
+<div class="container-fluid contact__page">
 
   {% include directory ~ '/templates/menu/navigation.html.twig' %}
 <div class="pos-block"></div>
-<div class="wrap news-page">
-  {{ page.content }}
+<div class="wrap">
+  {{ content.contact_title }}
+  {{ content.body }}
+  {{ content.webform }}
 </div>
 
   {% include directory ~ '/templates/menu/footer.html.twig' %}
